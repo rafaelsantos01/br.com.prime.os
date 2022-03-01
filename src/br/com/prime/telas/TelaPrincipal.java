@@ -35,6 +35,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menCadUsu = new javax.swing.JMenuItem();
         MenRel = new javax.swing.JMenu();
         menRelSer = new javax.swing.JMenuItem();
+        menFaturamento = new javax.swing.JMenu();
+        menReceber = new javax.swing.JMenuItem();
+        menPagar = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
         MenAju = new javax.swing.JMenu();
         menAjuSob = new javax.swing.JMenuItem();
         MenOpc = new javax.swing.JMenu();
@@ -126,6 +130,29 @@ public class TelaPrincipal extends javax.swing.JFrame {
         MenRel.add(menRelSer);
 
         Menu.add(MenRel);
+
+        menFaturamento.setText("Faturamento");
+
+        menReceber.setText("Contas a Receber");
+        menReceber.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menReceberActionPerformed(evt);
+            }
+        });
+        menFaturamento.add(menReceber);
+
+        menPagar.setText("Contas a Pagar");
+        menPagar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menPagarActionPerformed(evt);
+            }
+        });
+        menFaturamento.add(menPagar);
+
+        jMenuItem3.setText("Recibo");
+        menFaturamento.add(jMenuItem3);
+
+        Menu.add(menFaturamento);
 
         MenAju.setText("Ajuda");
 
@@ -240,6 +267,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
         desktop.add(cliente);
     }//GEN-LAST:event_menCadCliActionPerformed
 
+    private void menPagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menPagarActionPerformed
+        TelaContasPagar pagar = new TelaContasPagar();
+        pagar.setVisible(true);
+        desktop.add(pagar);
+    }//GEN-LAST:event_menPagarActionPerformed
+
+    private void menReceberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menReceberActionPerformed
+        TelaContasReceber receber = new TelaContasReceber();
+        receber.setVisible(true);
+        desktop.add(receber);
+    }//GEN-LAST:event_menReceberActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -284,13 +323,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JDesktopPane desktop;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JLabel lblData;
     public static javax.swing.JLabel lblUsuario;
     private javax.swing.JMenuItem menAjuSob;
     private javax.swing.JMenu menCad;
     private javax.swing.JMenuItem menCadCli;
     public static javax.swing.JMenuItem menCadUsu;
+    private javax.swing.JMenu menFaturamento;
     private javax.swing.JMenuItem menOpcSai;
+    private javax.swing.JMenuItem menPagar;
+    private javax.swing.JMenuItem menReceber;
     private javax.swing.JMenuItem menRelSer;
     // End of variables declaration//GEN-END:variables
 }

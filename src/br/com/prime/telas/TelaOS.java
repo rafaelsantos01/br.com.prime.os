@@ -62,8 +62,6 @@ public class TelaOS extends javax.swing.JInternalFrame {
         txtCliId.setText(null);
     }
     
- 
-    
     //metodo para cadastrar uma os
     private void emitir_os(){
        String sql = "insert into tbos(tipo,situacao,equipamento,defeito,servico,tecnico,valor,tbclientes_idcli) values(?,?,?,?,?,?,?,?)";
@@ -101,8 +99,6 @@ public class TelaOS extends javax.swing.JInternalFrame {
     }
     
     
-
-
   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -249,6 +245,11 @@ public class TelaOS extends javax.swing.JInternalFrame {
 
         jLabel5.setText("*ID");
 
+        tblClientes = new javax.swing.JTable(){
+            public boolean isCellEditable(int rowIndex,int colIndex){
+                return false;
+            }
+        };
         tblClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -462,8 +463,7 @@ public class TelaOS extends javax.swing.JInternalFrame {
 
     private void btnOsAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOsAdicionarActionPerformed
         //chamar o metodo emitir os
-        emitir_os();
-        
+        emitir_os();      
     }//GEN-LAST:event_btnOsAdicionarActionPerformed
 
 
