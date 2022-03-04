@@ -26,8 +26,6 @@ public class TelaCliente extends javax.swing.JInternalFrame {
         conexao = ModuloConexao.conector();
     }
 
-    
-    
     //meotodo para adicionar clientes
     private void adicionar() {
         String sql = "insert into tbclientes (nome_cli,end_cli,fone_cli,email_cli) values(?,?,?,?)";
@@ -37,6 +35,7 @@ public class TelaCliente extends javax.swing.JInternalFrame {
             pst.setString(2, txtCliEndereco.getText());
             pst.setString(3, txtCliFone.getText());
             pst.setString(4, txtCliEmail.getText());
+            
 
             //a linha abaixo atualiza a tabela usuarios com os dados do formulário.
             if ((txtCliNome.getText().isEmpty()) || (txtCliFone.getText().isEmpty())) {
@@ -136,16 +135,15 @@ public class TelaCliente extends javax.swing.JInternalFrame {
         }
 
     }
-    
-    
-    private void limpar(){
+
+    private void limpar() {
         txtCliId.setText(null);
         txtCliNome.setText(null);
         txtCliEndereco.setText(null);
         txtCliFone.setText(null);
         txtCliEmail.setText(null);
         txtCliPesquisar.setText(null);
-        ((DefaultTableModel) tblClientes.getModel()) .setRowCount(0);
+        ((DefaultTableModel) tblClientes.getModel()).setRowCount(0);
     }
 
     /**
