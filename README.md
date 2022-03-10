@@ -1,24 +1,35 @@
 # br.com.prime.os
 
 <h1 align="center">
-  Programa Ordem De serviço
+  Programa Ordem De serviço batizado de FKSystem 
 </h1>
 
-<h2>📃Funcionalidade</h2>
-Sistema de login e senha, aonde somente um usuario admin, pode visualizar os relatorios.
+<h2>📃Descrição do projeto</h2>
 
-Conta com bando de dados MySQL.
+Aplicação desenvolvida para o gerenciamento de O.S.
 
-Cadastros de clientes, aonde é possivel criar, alterar, buscar, editar e excluir.
+Obejetivo do software é gerenciar um negocio que trabalha com O.S.
 
-Cadastro de odem de serviço ainda em andamento.
+O mesmo vai realizar o controle e cadastro de estoque, contas a pagar,contas a receber, funcionarios,
+fornecedores, e claro controle de O.S.
 
-Agendamento de serviços ainda em andamento.
+<h2>📃Regras De negócio</h2>
 
-Contas a receber sendo planejado.
+-O software possui controle de login aonde usuarios comuns não tem acesso aos relatorios e contas a pagar
+somente os administradores.
+
+-O software gera relarios simples mas eficientes.
+
+-O software contém BD.
 
 
 
+<h2>📃Tecnologia usada</h2>
+
+
+Java 
+Apache Net Bens 12.6
+mySQL junto do XAMP
 
 
 
@@ -26,6 +37,13 @@ Contas a receber sendo planejado.
 Professor José de Assis
 
 Futuras implementaçoes e melhorias 
+-Contas a pagar
+-Contas a receber
+-Controle fornecedores
+
+<h2>📃Link para download do instalador </h2>
+[link](www.com.br)
 
 
 Rafael P. Santos
+
