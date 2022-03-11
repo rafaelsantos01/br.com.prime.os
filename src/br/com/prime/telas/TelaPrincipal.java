@@ -132,11 +132,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         );
         desktopLayout.setVerticalGroup(
             desktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 555, Short.MAX_VALUE)
+            .addGap(0, 549, Short.MAX_VALUE)
         );
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         lblHora.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblHora.setForeground(new java.awt.Color(0, 0, 0));
@@ -192,11 +192,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel2.setMaximumSize(new java.awt.Dimension(480, 504));
 
         jPanel2.setBackground(new java.awt.Color(0, 204, 204));
-        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         btnCadastroCliente.setBackground(new java.awt.Color(0, 204, 204));
         btnCadastroCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/prime/icones/add-user.png"))); // NOI18N
         btnCadastroCliente.setToolTipText("Cadastro Cliente");
+        btnCadastroCliente.setBorderPainted(false);
         btnCadastroCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnCadastroCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -207,6 +208,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         btnCadastroOs.setBackground(new java.awt.Color(0, 204, 204));
         btnCadastroOs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/prime/icones/prancheta.png"))); // NOI18N
         btnCadastroOs.setToolTipText("Nova OS");
+        btnCadastroOs.setBorderPainted(false);
         btnCadastroOs.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnCadastroOs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -218,6 +220,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(0, 204, 204));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/prime/icones/a-pagar (2).png"))); // NOI18N
         jButton1.setToolTipText("Contas A pagar");
+        jButton1.setBorderPainted(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -228,6 +231,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton5.setBackground(new java.awt.Color(0, 204, 204));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/prime/icones/a-pagar.png"))); // NOI18N
         jButton5.setToolTipText("Contas A receber");
+        jButton5.setBorderPainted(false);
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -236,7 +240,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
 
         jButton2.setBackground(new java.awt.Color(0, 204, 204));
+        jButton2.setForeground(new java.awt.Color(0, 204, 204));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/prime/icones/fornecedor.png"))); // NOI18N
+        jButton2.setBorderPainted(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -284,12 +290,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
                     .addComponent(desktop, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(60, 60, 60))
         );
         jPanel3Layout.setVerticalGroup(
@@ -304,7 +306,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                         .addGap(149, 149, 149)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(desktop, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(80, 80, 80))
+                .addGap(86, 86, 86))
         );
 
         menCad.setText("Cadastro");
