@@ -3,6 +3,10 @@
   Programa Ordem De serviço batizado de FKSystem 
 </h1>
 
+<div align = "center">
+  <img src="https://user-images.githubusercontent.com/83642989/158912677-cd507579-6383-4cc5-b392-3bb880553a8e.png" width = "400px" />
+  </div>
+
 <h2>📃Descrição do projeto</h2>
 
 Aplicação desenvolvida para o gerenciamento de O.S.
