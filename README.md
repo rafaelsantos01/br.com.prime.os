@@ -4,8 +4,14 @@
 </h1>
 
 <div align = "center">
-  <img src="https://user-images.githubusercontent.com/83642989/158912677-cd507579-6383-4cc5-b392-3bb880553a8e.png" width = "400px" />
+  <img src="https://user-images.githubusercontent.com/83642989/158912677-cd507579-6383-4cc5-b392-3bb880553a8e.png" width = "300px" height = "300px" />
+  <img src="https://user-images.githubusercontent.com/83642989/158912697-4ee30247-43a1-4012-a931-9acd7f02b748.png" width = "300px" />
+  <img src="https://user-images.githubusercontent.com/83642989/158912699-f66fffad-6c6f-46d9-aa8d-7e48f0e00b02.png" width = "300px" /> <br/>
+  <img src="https://user-images.githubusercontent.com/83642989/158912698-24882923-cf64-4109-b9de-5e3c2d1bb2dc.png" width = "300px" />
+  <img src="https://user-images.githubusercontent.com/83642989/158912697-4ee30247-43a1-4012-a931-9acd7f02b748.png" width = "300px" />
+  
   </div>
+
 
 <h2>📃Descrição do projeto</h2>
 
