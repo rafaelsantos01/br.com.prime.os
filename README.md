@@ -17,7 +17,7 @@
 
 Aplicação desenvolvida para o gerenciamento de O.S.
 
-Obejetivo do software é gerenciar um negocio que trabalha com O.S.
+Objetivo  do software é gerenciar um negocio que trabalha com O.S.
 
 O mesmo vai realizar o controle e cadastro de estoque, contas a pagar,contas a receber, funcionarios,
 fornecedores, e claro controle de O.S.
